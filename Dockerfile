@@ -1,8 +1,8 @@
-FROM alpine:3.3
+FROM alpine:3.4
 
 MAINTAINER Deepak Prabhakara <deepak.prabhakara@gmail.com> (@deepakprab)
 
-ENV GLIDE=0.8.3
+ENV GLIDE=0.10.2
 
 RUN apk update && apk add git go && rm -rf /var/cache/apk/*
 
