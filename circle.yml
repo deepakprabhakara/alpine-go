@@ -13,7 +13,7 @@ general:
 dependencies: 
   override: 
     - docker info
-    - docker login -u $QUAY_USER -p $QUAY_PASS quay.io
+    - docker login -e QUAY_EMAIL -u $QUAY_USER -p $QUAY_PASS quay.io
     - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASS
     - |
         VERSION=$(git describe --exact-match --tags 2>/dev/null || git rev-parse --short HEAD)
