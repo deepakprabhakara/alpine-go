@@ -4,7 +4,7 @@ MAINTAINER Deepak Prabhakara <deepak.prabhakara@gmail.com> (@deepakprab)
 
 ENV GLIDE=0.10.2
 
-RUN apk update && apk add git go && rm -rf /var/cache/apk/*
+RUN apk update && apk add curl git go && rm -rf /var/cache/apk/*
 
 ENV GOROOT /usr/lib/go
 ENV GOPATH /gopath
